@@ -1,0 +1,12 @@
+.topbar {
+  height: 100px;
+  width: 100vw;
+  padding-left: 100px;
+  border-bottom: 2px solid rgba(173, 173, 173, 0.4);
+  display: flex;
+  place-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background: $bg-navbar;
+  z-index: 2;
+}

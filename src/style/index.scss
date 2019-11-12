@@ -1,0 +1,42 @@
+@import "./variables";
+
+@import "../components/Sidebar/sidebar";
+@import "../components/Topbar/topbar";
+@import "../components/Searchbar/searchbar";
+@import "../components/Rightbar/rightbar";
+@import "../components/Contentsection/contentSection";
+@import "../components/Titlesection/titleSection";
+@import "../components/Button/button";
+@import "../components/ButtonGroup/buttonGroup";
+@import "../components/Navbar/withNav";
+@import "../components/Card/card";
+@import "../components/CardGroup/cardGroup";
+@import "../components/Modal/modal";
+@import "../components/TextArea/textArea";
+@import "../components/Calendar/calendar";
+@import "../components/MeetingRightbar/calendarLabel";
+@import "../components/MeetingRightbar/accounts";
+
+@import "../components/Meetings/meetings";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $font-color-dark;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

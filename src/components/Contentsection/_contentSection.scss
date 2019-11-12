@@ -1,0 +1,35 @@
+.content-section {
+  flex: 9999;
+  // border: 2px solid blue;
+  display: flex;
+  overflow: auto;
+  overflow-x: scroll;
+  box-sizing: border-box;
+  padding: 0rem 3rem;
+  width: calc(100vw - 400px - 4rem);
+  z-index: 12;
+  position: relative;
+  justify-content: flex-start;
+  .content-time {
+    color: $font-color-grey;
+    font-size: 0.7rem;
+  }
+}
+
+::-webkit-scrollbar-track {
+  border: none;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: none;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  height: 0.4rem;
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 1rem;
+  box-shadow: none;
+}

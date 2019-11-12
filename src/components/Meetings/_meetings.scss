@@ -1,0 +1,9 @@
+.meetings-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+  background: $bg-content-grey;
+  padding: 1rem;
+  box-shadow: inset 0px 0px 3px rgba(grey, 0.3);
+  // width: calc(100vw - 400px - 4rem);
+}

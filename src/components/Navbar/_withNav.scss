@@ -1,0 +1,33 @@
+.withNav {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100px auto 300px;
+  grid-template-rows: 100px auto;
+  box-sizing: border-box;
+  animation: switchPage 0.3s ease-in-out;
+  & > div {
+    &:nth-child(1) {
+      grid-column: 1 / 4;
+      grid-row: 1;
+      // z-index: -1;
+    }
+    &:nth-child(2) {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+    &:nth-child(3) {
+      grid-column: 3;
+      grid-row: 1/3;
+    }
+  }
+}
+
+@keyframes switchPage {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

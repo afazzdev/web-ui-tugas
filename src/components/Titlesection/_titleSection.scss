@@ -1,0 +1,21 @@
+.title-section {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 1rem 0;
+
+  .for-title {
+    display: flex;
+    flex-direction: row;
+    .title {
+      margin: 0 1rem;
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    span {
+      align-self: center;
+    }
+  }
+}
