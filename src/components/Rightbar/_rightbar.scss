@@ -69,31 +69,31 @@
       }
     }
   }
-}
 
-.forHidden {
-  height: 4rem;
-  width: 4rem;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 50%;
-  background-color: $bg-icon-yellow;
-  color: #fff;
-  position: fixed;
-  right: 0.6rem;
-  bottom: 85px;
-  font-size: 1.5rem;
-  outline: none;
-  z-index: 100000;
-  .fa-calendar-day {
+  .forHidden {
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: $bg-icon-yellow;
     color: #fff;
+    position: fixed;
+    right: 0.6rem;
+    bottom: 85px;
+    font-size: 1.5rem;
+    outline: none;
+    z-index: 100000;
+    .fa-calendar-day {
+      color: #fff;
+    }
   }
-}
 
-.active {
-  // visibility: visible;
-  display: block;
-  z-index: 9999;
+  .active {
+    // visibility: visible;
+    display: block;
+    z-index: 9999;
+  }
 }
 
 @keyframes getIn {
