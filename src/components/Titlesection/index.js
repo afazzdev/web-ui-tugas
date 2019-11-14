@@ -19,15 +19,17 @@ const TitleSection = props => {
           )}
         </span>
       </div>
-      {props.buttonGroup && (
-        <ButtonGroup
-          buttonGroup={props.buttonGroup}
-          buttonGroupStyle={props.buttonGroupStyle}
-          onClick={props.onClick}
-        >
-          {"for ButtonGroup"}
-        </ButtonGroup>
-      )}
+      <div className="for-button">
+        {props.buttonGroup && (
+          <ButtonGroup
+            buttonGroup={props.buttonGroup}
+            buttonGroupStyle={props.buttonGroupStyle}
+            onClick={props.onClick}
+          >
+            {"for ButtonGroup"}
+          </ButtonGroup>
+        )}
+      </div>
     </div>
   );
 };

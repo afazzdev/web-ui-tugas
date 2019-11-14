@@ -15,4 +15,8 @@
   div {
     color: #fff;
   }
+  .content-editable[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: rgba(226, 226, 226, 0.651);
+  }
 }

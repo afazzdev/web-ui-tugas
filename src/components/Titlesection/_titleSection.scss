@@ -19,3 +19,18 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .title-section {
+    margin: unset;
+    width: 100%;
+    overflow: auto;
+    display: unset;
+    .for-button {
+      display: flex;
+      overflow: auto;
+      overflow-y: scroll;
+      box-sizing: border-box;
+    }
+  }
+}

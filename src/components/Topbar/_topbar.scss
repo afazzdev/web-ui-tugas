@@ -10,3 +10,12 @@
   background: $bg-navbar;
   z-index: 2;
 }
+
+@media screen and (max-width: 600px) {
+  .topbar {
+    padding: unset;
+    padding-left: 1rem;
+    height: 70px;
+    overflow: auto;
+  }
+}

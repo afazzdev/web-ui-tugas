@@ -14,6 +14,27 @@
     color: $font-color-grey;
     font-size: 0.7rem;
   }
+  .content-editable[placeholder]:empty:before {
+    content: attr(placeholder);
+    color: #c7c9cb;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-section {
+    padding: 0rem 3rem;
+    width: calc(100vw - 4rem);
+    overflow: auto;
+
+    .content-time {
+      color: $font-color-grey;
+      font-size: 0.7rem;
+    }
+    .content-editable[placeholder]:empty:before {
+      content: attr(placeholder);
+      color: #c7c9cb;
+    }
+  }
 }
 
 ::-webkit-scrollbar-track {

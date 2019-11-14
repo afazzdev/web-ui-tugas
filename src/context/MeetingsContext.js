@@ -13,17 +13,14 @@ const initialState = {
       meeting: [
         {
           time: "10:00 AM - 11:00 AM",
-          content: "add your content",
           active: true
         },
         {
-          time: "10:00 AM - 11:00 AM",
-          content: "add your content"
+          time: "10:00 AM - 11:00 AM"
           // active: true
         },
         {
           time: "10:00 AM - 11:00 AM",
-          content: "add your content",
           active: true
         }
       ]
@@ -36,18 +33,33 @@ const initialState = {
       zero: "",
       meeting: [
         {
-          time: "10:00 AM - 11:00 AM",
-          content: "add your content"
+          time: "10:00 AM - 11:00 AM"
           // active: true
         },
         {
           time: "10:00 AM - 11:00 AM",
-          content: "add your content",
           active: true
         },
         {
-          time: "10:00 AM - 11:00 AM",
-          content: "add your content"
+          time: "10:00 AM - 11:00 AM" // active: true
+        }
+      ]
+    },
+    {
+      date: "Tuesday122019",
+      day: "Tuesday",
+      nth: "th",
+      today: 12,
+      zero: "",
+      meeting: [
+        {
+          time: "10:00 AM - 11:00 AM" // active: true
+        },
+        {
+          time: "10:00 AM - 11:00 AM" // active: true
+        },
+        {
+          time: "10:00 AM - 11:00 AM"
           // active: true
         }
       ]
@@ -60,42 +72,15 @@ const initialState = {
       zero: "",
       meeting: [
         {
-          time: "10:00 AM - 11:00 AM",
-          content: "add your content"
+          time: "10:00 AM - 11:00 AM"
+          // active: true
+        },
+        {
+          time: "10:00 AM - 11:00 AM"
           // active: true
         },
         {
           time: "10:00 AM - 11:00 AM",
-          content: "add your content"
-          // active: true
-        },
-        {
-          time: "10:00 AM - 11:00 AM",
-          content: "add your content"
-          // active: true
-        }
-      ]
-    },
-    {
-      date: "Tuesday122019",
-      day: "Tuesday",
-      nth: "th",
-      today: 12,
-      zero: "",
-      meeting: [
-        {
-          time: "10:00 AM - 11:00 AM",
-          content: "add your content"
-          // active: true
-        },
-        {
-          time: "10:00 AM - 11:00 AM",
-          content: "add your content"
-          // active: true
-        },
-        {
-          time: "10:00 AM - 11:00 AM",
-          content: "add your content",
           active: true
         }
       ]
@@ -119,18 +104,15 @@ const Reducer = (state = initialState, action) => {
             day: action.day,
             meeting: [
               {
-                time: "10:00 AM - 11:00 AM",
-                content: "add your content"
+                time: "10:00 AM - 11:00 AM"
+                // active: true
+              },
+              {
+                time: "10:00 AM - 11:00 AM"
                 // active: true
               },
               {
                 time: "10:00 AM - 11:00 AM",
-                content: "add your content"
-                // active: true
-              },
-              {
-                time: "10:00 AM - 11:00 AM",
-                content: "add your content",
                 active: true
               }
             ]

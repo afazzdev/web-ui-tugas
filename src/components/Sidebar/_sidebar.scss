@@ -8,7 +8,7 @@
   border-right: 2px solid rgba(173, 173, 173, 0.4);
   box-sizing: border-box;
   overflow: hidden;
-  z-index: 10;
+  z-index: 10000;
   .side-logo {
     width: 100px;
     height: 60px;
@@ -58,6 +58,56 @@
           border-radius: 5px;
           box-shadow: 3px 0px 4px 2px rgba($active-navbar, 0.2);
           animation: getin 0.5s ease;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    height: 70px;
+    width: 100vw;
+    bottom: 0;
+    overflow: auto;
+    // border: 2px solid blueviolet;
+    .side-logo {
+      display: none;
+      img {
+      }
+      &:hover {
+        img {
+        }
+      }
+    }
+    .side-container {
+      display: flex;
+      flex-direction: row;
+      .side-list {
+        display: flex;
+        align-items: center;
+        width: 70px;
+        // border: 2px solid green;
+        .link {
+          img {
+            width: 20px;
+          }
+          &:hover {
+            img {
+            }
+          }
+        }
+        .active {
+          &::after {
+            width: 40px;
+            height: 30px;
+
+            left: unset;
+
+            bottom: -25px;
+
+            transform: translateX(-32px);
+          }
         }
       }
     }

@@ -19,15 +19,23 @@ const ContentSection = props => {
           return (
             <>
               <CardGroup key={i} todaysDate={todaysDate}>
-                {a.meeting.map(b => (
-                  <Card cardContainerActive={b.active ? b.active : null}>
+                {a.meeting.map((b, i) => (
+                  <Card
+                    key={i}
+                    cardContainerActive={b.active ? b.active : null}
+                  >
                     <span className="content-time">{b.time}</span>
                     <div
                       className="content-editable"
-                      style={{ outline: "none", padding: "1rem 0" }}
+                      placeholder="placeholder"
+                      style={{
+                        outline: "none",
+                        padding: "1rem 0",
+                        color: b.active ? "#fff" : "#989898"
+                      }}
                       contentEditable
                     >
-                      {b.content}
+                      {/* {b.content} */}
                     </div>
                     <Button>
                       <i class="fas fa-paper-plane"></i> +

@@ -3,3 +3,11 @@
   padding: 0.3rem;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 600px) {
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+  }
+}
