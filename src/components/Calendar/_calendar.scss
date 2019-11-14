@@ -20,3 +20,26 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .react-calendar {
+    height: 260px;
+    overflow: auto;
+    box-sizing: content-box;
+    .react-calendar__navigation {
+      .react-calendar__navigation__label {
+        color: $font-color-grey;
+        font-size: 1rem;
+      }
+      .react-calendar__navigation__prev-button,
+      .react-calendar__navigation__next-button {
+        font-size: 1.8rem;
+        color: $primary-color;
+      }
+      .react-calendar__navigation__prev2-button,
+      .react-calendar__navigation__next2-button {
+        display: none;
+      }
+    }
+  }
+}

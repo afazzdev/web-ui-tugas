@@ -145,6 +145,31 @@ const Meetings = () => {
     }
   };
 
+  const handleHiddenRightbar = () => {
+    var navButton = document.querySelector(".forHidden");
+    var navMenu = document.querySelector(".wrapper-rightbar");
+    var win = window;
+
+    const openMenu = e => {
+      navButton.classList.toggle("active");
+      navMenu.classList.toggle("active");
+
+      e.preventDefault();
+      e.stopImmediatePropagation();
+    };
+
+    const closeMenu = e => {
+      if (navButton.classList.contains("active")) {
+        navButton.classList.remove("active");
+        navMenu.classList.remove("active");
+      }
+    };
+
+    navButton.addEventListener("click", openMenu, false);
+
+    win.addEventListener("click", closeMenu, false);
+  };
+
   return (
     <>
       {console.log("state", state)}
@@ -162,6 +187,7 @@ const Meetings = () => {
         todaysDate={todaysDate}
         rightBarDate={rightBarDate}
         schedule={state.schedule}
+        onHiddenRightbar={handleHiddenRightbar}
       />
     </>
   );

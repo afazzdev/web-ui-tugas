@@ -18,7 +18,8 @@ const Meetings = ({
   singelButtonStyle,
   buttonGroupStyle,
   onClick,
-  rightBarDate
+  rightBarDate,
+  onHiddenRightbar
 }) => {
   return (
     <>
@@ -35,11 +36,16 @@ const Meetings = ({
         />
         <ContentSection todaysDate={todaysDate} schedule={schedule} />
       </div>
-      <Rightbar>
-        <CalendarLabel rightBarDate={rightBarDate} />
-        <Calendar />
-        <Accounts />
-      </Rightbar>
+      <div className="wrapper-rightbar">
+        <Rightbar>
+          <CalendarLabel rightBarDate={rightBarDate} />
+          <Calendar />
+          <Accounts />
+        </Rightbar>
+      </div>
+      <button className="forHidden" onClick={onHiddenRightbar}>
+        <i class="fas fa-calendar-day"></i>
+      </button>
     </>
   );
 };

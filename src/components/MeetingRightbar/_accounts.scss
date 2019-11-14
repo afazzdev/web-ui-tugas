@@ -12,3 +12,20 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .account-container {
+    // overflow: hidden;
+    .account-label {
+      margin-left: -1rem;
+      font-size: 1.5rem;
+      color: $font-color-grey;
+    }
+    .account-lists {
+      margin-top: 1rem;
+      .account-list {
+        color: $font-color-dark;
+      }
+    }
+  }
+}
